@@ -1,0 +1,73 @@
+body {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Patrick Hand', cursive;
+}
+
+main {
+  width: 705px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+section {
+  width: 225px;
+  height: 225px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+section:nth-child(1) {
+  background-image: url("img/pd1.jpg");
+}
+
+section:nth-child(2) {
+  background-image: url("img/pd2.jpg");
+}
+
+section:nth-child(3) {
+  background-image: url("img/pd3.jpg");
+}
+
+.sconto {
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.heart {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 25px;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+section:hover > .heart{
+  opacity: 1;
+}
